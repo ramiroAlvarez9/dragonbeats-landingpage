@@ -7,8 +7,7 @@ export default function ChevronRightIcon() {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className="w-6 h-6"
-        style={{display: 'inline'}}
+        className="w-5 h-5"
       >
         <path
           strokeLinecap="round"

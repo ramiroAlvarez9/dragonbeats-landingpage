@@ -23,7 +23,7 @@ export default function MobileNav() {
   return (
     <>
       <nav className="nav flex justify-between items-center bg-orange-300 bg-transparent">
-        <Image src={Logo} width={75} height={75} alt="logo" / > 
+        <Image src={Logo} width={75} height={75} alt="logo" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -65,13 +65,15 @@ export default function MobileNav() {
           </svg>
         </div>
 
-        <div className="slide__logo">DRAGON BEATS</div>
+        <div className="slide__logo">GOLDEN DRAGON BEATS</div>
 
         <div className="slide__containerLinks ">
+
           <Link className="slide__links" href="/" onClick={closeTheMenu}>
             <ChevronRightIcon />
             INICIO
           </Link>
+
           <Link
             className="slide__links"
             href="#ultimos-lanzamientos"
@@ -80,10 +82,12 @@ export default function MobileNav() {
             <ChevronRightIcon />
             ULTIMOS LANZAMIENTOS
           </Link>
+
           <Link className="slide__links" href="#tienda" onClick={closeTheMenu}>
             <ChevronRightIcon />
             TIENDA
           </Link>
+
           <Link
             className="slide__links"
             href="#contacto"
@@ -92,6 +96,7 @@ export default function MobileNav() {
             <ChevronRightIcon />
             CONTACTO
           </Link>
+
         </div>
       </div>
     </>

@@ -30,6 +30,7 @@
     }
 }
 
+//nav slide
 .slide {
 
     width: 100%;
@@ -48,14 +49,11 @@
         width: 100vw;
         height: 7.5vh;
 
-        .closeIcon {
-            //margin-right: 10%;
-        }
+        .closeIcon {}
     }
 
     .slide__logo {
         margin-left: 10%;
-
     }
 
     .slide__containerLinks {
@@ -67,9 +65,13 @@
         color: $tiertary;
 
         .slide__links {
-            display: block;
+            display: flex;
+            align-items: center;
             margin-bottom: 10%;
             text-decoration: none;
+            width: 60%;
+            color: white;
+            
         }
 
         .slide__links:visited {
@@ -191,7 +193,7 @@
                     margin-bottom: 5%;
                     margin-right: 2%;
                     display: flex;
-                    justify-content: end;
+                    justify-content: flex-end;
                 }
             }
         }
@@ -241,6 +243,7 @@
     height: 100%;
     background-color: $secondary-transparent;
     border: solid 1px black;
+
     .tienda__title {
         @include titles();
     }
@@ -274,7 +277,7 @@
         margin-left: 2.5%;
 
         .contacto__container--button {
-            margin-top: 10%;
+            margin-top: 0%;
             margin-bottom: 5%;
         }
 
@@ -371,6 +374,7 @@
             font-size: 90%;
             color: $tiertary;
 
+
             .slide__links {
                 display: block;
                 margin-bottom: 10%;
@@ -380,6 +384,7 @@
             .slide__links:visited {
                 color: $tiertary;
             }
+
         }
 
     }
@@ -639,24 +644,21 @@
     //-- CONTACT COMPONENT --//
     #contacto {
         background-color: $secondary-tablet-desktop;
-        //max-height: 310px;
         height: 15%;
-
         .contacto__title {
-            margin-top: 3%; 
+            margin-top: 3%;
             margin-bottom: 3%;
-
         }
-
         .contacto__container {
 
             .contacto__container--button {}
 
         }
     }
+
     //-- END CONTACT COMPONENT --//
 
-    #footer{
+    #footer {
         background-color: $secondary;
         height: 12.5vh;
     }
@@ -691,12 +693,10 @@
                 .nav__containerLinks--link {
                     letter-spacing: 1px;
                     text-decoration: none;
+                    color: white;
                 }
 
-                .nav__containerLinks--link {
-                    letter-spacing: 1px;
-                    text-decoration: none;
-                }
+
 
                 .nav__containerLinks--link:visited {
                     color: white;

@@ -12,12 +12,13 @@ export default function Contact() {
       <h2 className="contacto__title">CONTACTO</h2>
 
         <div className="contacto__container">
-          <p> Mantengamosnos en contacto: </p>
+          <p style={{marginBottom: '5%'}}> Mantengamosnos en contacto: </p>
 
           <a
             href="https://www.youtube.com/@GoldenDragonBeats"
             target="_blank"
             rel="noopener noreferrer"
+            style = {{ width: '80%' }}
           >
             <Button
               variant="contained"
