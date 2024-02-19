@@ -88,13 +88,13 @@
 //-- HOME COMPONENT --//
 
 #home {
-
     width: 100%;
     height: 30%;
     background-color: $secondary-transparent;
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     .home__container {
         margin-top: 10%;
@@ -181,7 +181,6 @@
                 flex-direction: column;
 
                 .modal__container--iconContainer {
-                    width: 100%;
                     margin-bottom: 5%;
                     margin-right: 2%;
                     display: flex;
@@ -237,7 +236,7 @@
 
 //-- CONTACT COMPONENT --//
 #contacto {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
     background-color: $secondary-transparent;
     display: flex;
@@ -683,7 +682,7 @@
         justify-content: center;
         align-items: center;
         background-color: $secondary;
-        width: 100vw;
+        width: 100%;
         height: 15vh;
 
         .nav__container {
@@ -723,14 +722,23 @@
         height: 65vh;
 
         .home__container {
-            //background-color: red;
             margin-left: 22%;
 
             .items {}
 
-            .home__container--title {}
+            .home__container--title {
+                margin-top: -5%;
+                margin-bottom: 2%;
 
-            .home__container--link {}
+            }
+
+            .home__container--link {
+                margin-top: 1%;
+            }
+
+            .callToActionButton {
+                margin-top: -15%;
+            }
 
             .home__container--link:focus {}
 
@@ -745,7 +753,6 @@
 
     //-- MUSIC VIDEOS COMPONENT --//
     #ultimos-lanzamientos {
-
         background-color: $secondary-transparent;
         height: 30%;
 
@@ -753,22 +760,38 @@
             .ultimos-lanzamientos__title {
                 font-size: 35px;
                 margin-top: 5%;
-                margin-left: 15%;
+                margin-left: 20%;
             }
         }
 
         .ultimos-lanzamientos__container {
             margin-top: -7%;
-            width: 100%;
-            grid-template-columns: 35% 35%;
+            width: 60%;
+            margin-left: 0%;
+            grid-template-columns: 50% 50%;
             row-gap: 1%;
             column-gap: 0.5%;
-            margin-left: 30%;
             margin-bottom: 10%;
+            .modal {
+
+                .modal__container {
+             
+    
+                    .modal__container--iconContainer {
+                        margin-right: 0%;
+                        margin-bottom: 3%;
+                
+                    }
+                    .modal__container--iconContainer:hover {
+                        cursor: pointer;
+                
+                    }
+                }
+            }
         }
 
         .img__container {
-            
+
             .img__container--iconContainer {
 
 
@@ -777,13 +800,72 @@
             }
 
         }
-        .img__container:hover{
+
+        .img__container:hover {
             cursor: pointer;
         }
 
     }
 
-    //-- END MUSIC VIDEOS COMPONENT --//f
+    
+
+
+    //-- END MUSIC VIDEOS COMPONENT --//
+
+
+    //-- MUSIC STORE COMPONENT --//
+    #tienda {
+        width: 100%;
+        height: 100%;
+        background-color: $secondary-transparent;
+        border: solid 1px black;
+        background-color: $secondary;
+
+        .tienda__title {
+            @include titles();
+            margin-top: 5%;
+            margin-left: 20%;
+            margin-bottom: 2%;
+            font-size: 35px;
+        }
+        .tiendaiframe__container{
+            height: 100%;
+        }
+    }
+
+    //-- END MUSIC STORE COMPONENT --//
+
+//-- CONTACT COMPONENT --//
+#contacto {
+    background-color: $secondary-transparent;
+    border-bottom: none;
+}
+
+//-- END CONTACT COMPONENT --//
+
+    //-- FOOTER COMPONENT --//
+    #footer {
+        width: 100%;
+        height: 10vh;
+        background-color: $secondary;
+
+        .footer__container {
+
+            .footer__containerLogo {
+                .footer__containerLogo--paragraph {
+                    font-size: 12px;
+                }
+
+            }
+
+            .footer__socialMediaContaner {
+                width: 10%;
+            }
+        }
+
+    }
+
+    //-- END FOOTER COMPONENT --//
 
 
 }

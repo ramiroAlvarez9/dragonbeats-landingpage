@@ -22,12 +22,13 @@ export default function Main() {
           <Link href= '#tienda' className= 'home__container--link'>
           <Button 
             variant="outlined" 
-            className="items"
+            className="items callToActionButton"
             sx= 
               {{ 
                    borderRadius: '20px', 
                    color : '#fac959', 
-                   borderColor: '#fac959'
+                   borderColor: '#fac959',
+                   marginTop: '0%',
               }}
           >
             

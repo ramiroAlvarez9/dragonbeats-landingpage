@@ -50,6 +50,7 @@ export default function YoutubeModal({
           <div
             className="modal__container--iconContainer"
             onClick={() => setTranslateModal(-999)}
+            style={ {width: youtubeVideoWidth } }
           >
             <CloseIcon />
           </div>

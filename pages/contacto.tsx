@@ -15,7 +15,7 @@ export default function Contact() {
           <p style={{marginBottom: '5%'}}> Mantengamosnos en contacto: </p>
 
           <a
-            href="https://www.youtube.com/@GoldenDragonBeats"
+            href="https://t.me/VentasMagicas777"
             target="_blank"
             rel="noopener noreferrer"
             className="contacto__container--a"
