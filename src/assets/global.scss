@@ -71,7 +71,7 @@
             text-decoration: none;
             width: 60%;
             color: white;
-            
+
         }
 
         .slide__links:visited {
@@ -80,11 +80,6 @@
     }
 
 }
-
-
-
-
-
 
 //-- END MENU COMPONENT --//
 
@@ -111,15 +106,11 @@
         justify-content: center;
         flex-direction: column;
 
-
-
         .items {
             margin-bottom: 10%;
         }
 
         .home__container--title {
-
-
             color: $primary;
             font-size: 30px;
             width: 90%;
@@ -156,6 +147,7 @@
     background-color: $secondary;
 
     .ultimos-lanzamientos__titleContainer {
+
         width: 100%;
     }
 
@@ -166,7 +158,7 @@
         height: 100%;
         grid-template-columns: 100%;
         grid-template-rows: 25% 25% 25% 25%;
-        row-gap: 1%;
+        row-gap: 3%;
         column-gap: 3%;
         margin-bottom: 30%;
         color: $primary;
@@ -212,30 +204,22 @@
 
     .img__container {
         background-color: rgba(255, 255, 255, 0);
-        width: 100%;
-        height: auto;
 
-        .img__container--iconContainer {
-
+        .img__container--imgICon {
             position: relative;
-            z-index: 1;
-            top: 50%;
 
-            .img__container--icon {
-                width: 100%;
-                display: flex;
-                justify-content: center;
+            .playIcon {
+                position: absolute;
+                left: 45%;
+                top: 40%;
             }
         }
-
-
     }
 
 
 }
 
-
-//-- END HOME COMPONENT --//  
+//-- END MUSIC VIDEOS COMPONENT --//  
 
 //-- MUSIC STORE COMPONENT --//
 #tienda {
@@ -267,7 +251,6 @@
     }
 
     .contacto__container {
-        //border: solid 1px red;
 
         width: 95%;
         height: 100%;
@@ -325,7 +308,6 @@
 @media (min-width: 768px) {
 
     //-- MENU COMPONENT --//
-
     .nav {
         background-color: $secondary;
 
@@ -438,8 +420,8 @@
 
         .ultimos-lanzamientos__container {
             grid-template-columns: 50% 50%;
-            grid-template-rows: 50%;
-            row-gap: 1%;
+            grid-template-rows: 45%;
+            row-gap: 0%;
             column-gap: 1%;
 
 
@@ -451,6 +433,22 @@
             margin-top: 10%;
 
         }
+
+        .img__container {
+            background-color: rgba(255, 255, 255, 0);
+
+            .img__container--imgICon {
+                position: relative;
+
+                .playIcon {
+                    position: absolute;
+                    left: 45%;
+                    top: 40%;
+                }
+            }
+        }
+
+
 
     }
 
@@ -472,7 +470,7 @@
 
     //-- CONTACT COMPONENT --//
     #contacto {
-        height: 38vh;
+        height: 50vh;
         align-items: center;
 
         .contacto__title {
@@ -488,10 +486,15 @@
             margin-left: 0%;
             align-items: center;
 
+            .contacto__container--a {
+                width: auto;
+
+            }
 
             .contacto__container--button {
                 margin-top: 10%;
                 margin-bottom: 5%;
+
             }
         }
     }
@@ -645,10 +648,12 @@
     #contacto {
         background-color: $secondary-tablet-desktop;
         height: 15%;
+
         .contacto__title {
             margin-top: 3%;
             margin-bottom: 3%;
         }
+
         .contacto__container {
 
             .contacto__container--button {}
@@ -715,6 +720,7 @@
 
     //-- HOME COMPONENT --//
     #home {
+        height: 65vh;
 
         .home__container {
             //background-color: red;
@@ -736,6 +742,48 @@
     }
 
     //-- END HOME COMPONENT --//
+
+    //-- MUSIC VIDEOS COMPONENT --//
+    #ultimos-lanzamientos {
+
+        background-color: $secondary-transparent;
+        height: 30%;
+
+        .ultimos-lanzamientos__titleContainer {
+            .ultimos-lanzamientos__title {
+                font-size: 35px;
+                margin-top: 5%;
+                margin-left: 15%;
+            }
+        }
+
+        .ultimos-lanzamientos__container {
+            margin-top: -7%;
+            width: 100%;
+            grid-template-columns: 35% 35%;
+            row-gap: 1%;
+            column-gap: 0.5%;
+            margin-left: 30%;
+            margin-bottom: 10%;
+        }
+
+        .img__container {
+            
+            .img__container--iconContainer {
+
+
+
+                .img__container--icon {}
+            }
+
+        }
+        .img__container:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    //-- END MUSIC VIDEOS COMPONENT --//f
 
 
 }

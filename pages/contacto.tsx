@@ -18,7 +18,7 @@ export default function Contact() {
             href="https://www.youtube.com/@GoldenDragonBeats"
             target="_blank"
             rel="noopener noreferrer"
-            style = {{ width: '80%' }}
+            className="contacto__container--a"
           >
             <Button
               variant="contained"

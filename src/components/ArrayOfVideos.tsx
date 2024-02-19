@@ -9,48 +9,44 @@ interface Props {
 }
 
 export default function ArrayOfVideos({ ArrayOfVideos }: Props) {
-  
+
   //video size for videos
   const [actualVideoId, setActualVideoId] = useState<string>("");
   //modal translate values - base value: -999%, other: 0% 
   const [translateModal, setTranslateModal] = useState<number>(-999);
 
 
-  function setVideoID  (id: string): void 
-  {
+  function setVideoID(id: string): void {
     setActualVideoId(id);
     setTranslateModal(0);
   }
 
-  console.log();
-  
-  const arrayOfVideos = ArrayOfVideos.map(
-    (object: Object | any, index: number) => 
-    {
 
+
+  const arrayOfVideos = ArrayOfVideos.map(
+    (object: Object | any, index: number) => {
       return (
         //// JSX ELEMENTS ////
         <>
           <div
             className="img__container"
-            key={object.id} 
-            onClick={ () => setVideoID(object.snippet.resourceId.videoId)}
+            key={object.id}
+            onClick={() => setVideoID(object.snippet.resourceId.videoId)}
           >
-            <div className="img__container--iconContainer"   >
-              <div className="img__container--icon"  >
-                <PlayIcon   />
-              </div>
+            <div className="img__container--imgICon"   >
+              
+              <PlayIcon />
+              <Img
+                className='img__container--img'
+                style={{
+                  backgroundColor: "grey",
+                  width: "100%",
+                  height: 'auto',
+                }}
+                src={object.snippet.thumbnails.maxres.url}
+                alt={"ultimo-lanzamiento-imagen"}
+              />
             </div>
-            <Img
-              style={{
-                backgroundColor: "grey",
-                width: "100%",
-                height: "auto",
-                position: "relative",
-              }}
-              src={object.snippet.thumbnails.maxres.url}
-              alt={"ultimo-lanzamiento-imagen"}
-            />
           </div>
         </>
       );
