@@ -15,20 +15,21 @@ export default function Main() {
           <h1 className="home__container--title items" > GOLDEN <br /> DRAGON BEATS </h1>
 
           <p  className="home__container--title--paragraph items">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Eius
-            maiores id ad.
+            Los mejores beats estan acá, descubrilos tocando el botón:
           </p>
+          
           <Link href= '#tienda' className= 'home__container--link'>
           <Button 
             variant="outlined" 
             className="items callToActionButton"
+            //size = 'large'
             sx= 
-              {{ 
+           {{ 
                    borderRadius: '20px', 
                    color : '#fac959', 
                    borderColor: '#fac959',
                    marginTop: '0%',
+                   
               }}
           >
             
