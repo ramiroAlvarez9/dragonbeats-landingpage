@@ -12,11 +12,13 @@
 //-- MENU COMPONENT --//
 .navDesktop {
     display: none;
+    color: $tiertary;
 }
 .nav {
     width: 100vw;
     height: 15vh;
     background-color: $secondary-transparent;
+    color: $tiertary;
     .nav__logo {
         margin-left: 2%;
     }
@@ -65,7 +67,7 @@
             margin-bottom: 10%;
             text-decoration: none;
             width: 60%;
-            color: white;
+            color: $tiertary;
 
         }
 
@@ -103,13 +105,17 @@
 
         .items {
             margin-bottom: 10%;
+            color: $tiertary;
         }
 
-        .home__container--title {
+        .callToActionButton{
+            color: $primary;
+        }
+        .home__container--title 
+        {
             color: $primary;
             font-size: 30px;
             width: 90%;
-
         }
 
         .home__container--link {
@@ -253,6 +259,11 @@
         justify-content: center;
         margin-left: 2.5%;
 
+        .contacto__container--paragraph{
+            color: $tiertary;
+
+        }
+
         .contacto__container--button {
             margin-top: 0%;
             margin-bottom: 5%;
@@ -277,8 +288,8 @@
         .footer__containerLogo {
             margin-left: 2%;
 
-
             .footer__containerLogo--paragraph {
+                color: $tiertary;
                 font-size: 8px;
             }
 

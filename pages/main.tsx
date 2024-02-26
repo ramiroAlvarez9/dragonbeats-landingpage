@@ -15,7 +15,7 @@ export default function Main() {
           <h1 className="home__container--title items" > GOLDEN <br /> DRAGON BEATS </h1>
 
           <p  className="home__container--title--paragraph items">
-            Los mejores beats estan acá, descubrilos tocando el botón:
+          El sonido que buscás está a un click de distancia, tocá el botón y descubrilo:
           </p>
           
           <Link href= '#tienda' className= 'home__container--link'>

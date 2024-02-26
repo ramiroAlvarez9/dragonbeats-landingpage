@@ -12,7 +12,7 @@ export default function Contact() {
       <h2 className="contacto__title">CONTACTO</h2>
 
         <div className="contacto__container">
-          <p style={{marginBottom: '5%'}}> Mantengamosnos en contacto: </p>
+          <p style={{marginBottom: '5%'}} className = "contacto__container--paragraph"> Para consultas, licencias exclusivas, servicios personalizados o adquirir tu beat, contactanos </p>
 
           <a
             href="https://t.me/VentasMagicas777"
