@@ -13,20 +13,15 @@
 .navDesktop {
     display: none;
 }
-
 .nav {
     width: 100vw;
     height: 15vh;
     background-color: $secondary-transparent;
-
-
     .nav__logo {
         margin-left: 2%;
     }
-
     .nav__hamburguer {
         margin-right: 2%;
-
     }
 }
 
