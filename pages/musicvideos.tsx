@@ -36,7 +36,7 @@ export default function MusicVideos() {
       
       <div className="ultimos-lanzamientos__titleContainer">
         <h2 className="ultimos-lanzamientos__title">
-          ULTIMOS <br /> LANZAMIENTOS
+          ULTIMOS LANZAMIENTOS
         </h2>
       </div>
 

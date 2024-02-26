@@ -19,8 +19,8 @@ export default function MusicStore() {
       
       <section id="tienda">
       
-        <h2 className="tienda__title">TIENDA</h2>  
-      
+        <h2 className="tienda__title">CATALOGO</h2>  
+        <div className="tiendaiframe__container">
         <iframe
           id="embedSoundClick"
           width="100%"
@@ -30,6 +30,7 @@ export default function MusicStore() {
         >
           
         </iframe>
+        </div>
       </section>
     </>
   );
