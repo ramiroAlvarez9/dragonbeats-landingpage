@@ -8,20 +8,22 @@
     margin-left: 5%;
 }
 
-
 //-- MENU COMPONENT --//
 .navDesktop {
     display: none;
     color: $tiertary;
 }
+
 .nav {
     width: 100vw;
     height: 15vh;
     background-color: $secondary-transparent;
     color: $tiertary;
+
     .nav__logo {
         margin-left: 2%;
     }
+
     .nav__hamburguer {
         margin-right: 2%;
     }
@@ -29,7 +31,6 @@
 
 //nav slide
 .slide {
-
     width: 100%;
     height: 100%;
     background-color: $secondary;
@@ -81,17 +82,15 @@
 //-- END MENU COMPONENT --//
 
 
-
 //-- HOME COMPONENT --//
 
 #home {
     width: 100%;
     height: 30%;
-    background-color: $secondary-transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: $secondary-transparent; 
 
     .home__container {
         margin-top: 10%;
@@ -108,11 +107,11 @@
             color: $tiertary;
         }
 
-        .callToActionButton{
+        .callToActionButton {
             color: $primary;
         }
-        .home__container--title 
-        {
+
+        .home__container--title {
             color: $primary;
             font-size: 30px;
             width: 90%;
@@ -259,7 +258,7 @@
         justify-content: center;
         margin-left: 2.5%;
 
-        .contacto__container--paragraph{
+        .contacto__container--paragraph {
             color: $tiertary;
 
         }
@@ -547,15 +546,15 @@
             margin-right: 2%;
         }
     }
-
     //-- END MENU COMPONENT --//
-
-
+    
+    
     //--HOME COMPONENT --//
     #home {
-        background-color: $secondary;
+        background-color: $secondary-transparent;
         height: 50%;
         width: 100%;
+        
 
         .home__container {
 
@@ -676,14 +675,13 @@
 }
 
 @media (min-width: 1200px) {
-    //-- MENU COMPONENT --// 
 
+    //-- MENU COMPONENT --// 
     .nav {
         display: none;
     }
 
     .navDesktop {
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -701,19 +699,44 @@
                 justify-content: space-between;
 
                 .nav__containerLinks--link {
+                    position: relative;
                     letter-spacing: 1px;
-                    text-decoration: none;
                     color: white;
+                    text-decoration: none;
+
                 }
 
-
-
                 .nav__containerLinks--link:visited {
-                    color: white;
+                    color: $tiertary;
                 }
 
                 .nav__containerLinks--link:active {
                     color: $tiertary;
+                }
+
+              
+                
+                .nav__containerLinks--link::after{
+                    content: '';
+                    position: absolute;
+                    top: 10%;
+                    left: 1%;
+                    right: 25%;
+                    bottom: -50%;
+                    width:0%;
+                    border-bottom: 3px solid $tiertary;
+                    transition: width 0.3s ease;
+
+                }
+                .nav__containerLinks--link:hover {
+                    transition: 0.7s;
+                    color: $primary;
+
+                }
+                
+                .nav__containerLinks--link:hover::after {
+                    width: 40%;
+
                 }
 
             }
@@ -725,6 +748,7 @@
 
     //-- HOME COMPONENT --//
     #home {
+        background-color: $secondary;
         height: 65vh;
 
         .home__container {
@@ -779,19 +803,21 @@
             row-gap: 1%;
             column-gap: 0.5%;
             margin-bottom: 10%;
+
             .modal {
 
                 .modal__container {
-             
-    
+
+
                     .modal__container--iconContainer {
                         margin-right: 0%;
                         margin-bottom: 3%;
-                
+
                     }
+
                     .modal__container--iconContainer:hover {
                         cursor: pointer;
-                
+
                     }
                 }
             }
@@ -814,7 +840,7 @@
 
     }
 
-    
+
 
 
     //-- END MUSIC VIDEOS COMPONENT --//
@@ -835,20 +861,21 @@
             margin-bottom: 2%;
             font-size: 35px;
         }
-        .tiendaiframe__container{
+
+        .tiendaiframe__container {
             height: 100%;
         }
     }
 
     //-- END MUSIC STORE COMPONENT --//
 
-//-- CONTACT COMPONENT --//
-#contacto {
-    background-color: $secondary-transparent;
-    border-bottom: none;
-}
+    //-- CONTACT COMPONENT --//
+    #contacto {
+        background-color: $secondary-transparent;
+        border-bottom: none;
+    }
 
-//-- END CONTACT COMPONENT --//
+    //-- END CONTACT COMPONENT --//
 
     //-- FOOTER COMPONENT --//
     #footer {

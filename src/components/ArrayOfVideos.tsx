@@ -56,6 +56,7 @@ export default function ArrayOfVideos({ ArrayOfVideos }: Props) {
   return (
     <>
       {arrayOfVideos}
+      
       <YoutubeModal
         videoId={actualVideoId}
         translateModal={translateModal}

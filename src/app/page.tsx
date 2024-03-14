@@ -1,8 +1,8 @@
 
 import Main        from '../../pages/main';
-import MusicVideos from '../../pages/musicvideos';
-import MusicStore  from '../../pages/musicstore';
-import Contact     from '../../pages/contacto';
+import UltimosLanzamientos from '../../pages/ultimos-lanzamientos';
+import Tienda  from '../../pages/tienda';
+import Contacto     from '../../pages/contacto';
 import Footer      from '../../pages/footer';
 import                  '../assets/global.scss';    
 import { Metadata }from 'next';
@@ -14,15 +14,13 @@ export const metadata: Metadata = {
 
 export default function Home() {
 
- 
-
   return (
     <>     
     
       <Main        />
-      <MusicVideos />
-      <MusicStore  />
-      <Contact     />
+      <UltimosLanzamientos />
+      <Tienda      />
+      <Contacto     />
       <Footer      />  
     
     </>

@@ -16,6 +16,7 @@ export default function YoutubeModal({
   translateModal,
   setTranslateModal,
 }: Props) {
+  
   const [youtubeVideoWidth, setYoutubeVideoWidth] = useState<number>(0);
 
   const opts = {
@@ -71,9 +72,7 @@ export default function YoutubeModal({
               title={""} // defaults -> ''
               loading={undefined} // defaults -> undefined
               opts={opts} // defaults -> {}
-              onReady={() => {
-                console.log("hola");
-              }} // defaults -> noop
+              onReady={() => {}} // defaults -> noop
               onPlay={undefined} // defaults -> noop
               onPause={undefined} // defaults -> noop
               onEnd={undefined} // defaults -> noop
